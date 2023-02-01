@@ -66,11 +66,14 @@ public class ListBasics {
         // You can nest a loop inside another loop:
 
         List<String> people = List.of("sally", "fred");
-        for(String person : people) {
+        
             for(String word : magicWords) {
-                System.out.println(person + " says " + word + "!");
+                for(String person : people){
+                    System.out.println(person + " says " + word + "!");
+                }
+                
             }
-        }
+        
 
         // But can you nest a list inside another list? A list of lists? Yes!
 
